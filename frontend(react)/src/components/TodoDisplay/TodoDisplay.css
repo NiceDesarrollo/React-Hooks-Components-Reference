@@ -1,0 +1,134 @@
+/* TodoDisplay Component Styles */
+.todo-display {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.todo-display h2 {
+  margin: 0 0 20px 0;
+  color: #333;
+  text-align: center;
+}
+
+.counter-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 6px;
+}
+
+.id-display {
+  font-size: 16px;
+  color: #555;
+}
+
+.id-value {
+  font-weight: bold;
+  color: #007bff;
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+.increment-btn {
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.increment-btn:hover {
+  background: #0056b3;
+}
+
+.data-section {
+  margin-top: 20px;
+}
+
+.status {
+  margin-bottom: 15px;
+  padding: 10px;
+  background: #e9ecef;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.error {
+  margin-bottom: 15px;
+  padding: 10px;
+  background: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+  color: #721c24;
+}
+
+.todo-data {
+  padding: 10px;
+  background: #d1ecf1;
+  border: 1px solid #bee5eb;
+  border-radius: 4px;
+  color: #0c5460;
+}
+
+.error pre,
+.todo-data pre {
+  margin: 10px 0 0 0;
+  font-size: 12px;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* Todo Section Styles (moved from App.css) */
+.todo-section {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e1e5e9;
+  min-height: 300px;
+}
+
+.todo-section h2 {
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Todo Content Styles (moved from App.css) */
+.todo-content {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #3498db;
+}
+
+.todo-content h3 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.todo-content p {
+  color: #666;
+  margin: 0.25rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .todo-section {
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+  }
+}
