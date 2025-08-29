@@ -1,0 +1,85 @@
+### Prisma Express Backend API Tests
+### Base URL: http://localhost:3001
+
+### 1. Health Check
+GET http://localhost:3001/health
+
+###
+
+### 2. Get All Users
+GET http://localhost:3001/users
+
+###
+
+### 3. Create a New User
+POST http://localhost:3001/users
+Content-Type: application/json
+
+{
+  "email": "john.doe@example.com",
+  "name": "John Doe",
+  "age": 30
+}
+
+###
+
+### 4. Create Another User
+POST http://localhost:3001/users
+Content-Type: application/json
+
+{
+  "email": "jane.smith@example.com",
+  "name": "Jane Smith",
+  "age": 25
+}
+
+###
+
+### 5. Get User by ID (replace {id} with actual user ID)
+GET http://localhost:3001/users/1
+
+###
+
+### 6. Update User (replace {id} with actual user ID)
+PUT http://localhost:3001/users/1
+Content-Type: application/json
+
+{
+  "email": "john.updated@example.com",
+  "name": "John Updated",
+  "age": 31
+}
+
+###
+
+### 7. Delete User (replace {id} with actual user ID)
+DELETE http://localhost:3001/users/1
+
+###
+
+### 8. Test Error - Get Non-existent User
+GET http://localhost:3001/users/999
+
+###
+
+### 9. Test Error - Create User with Missing Fields
+POST http://localhost:3001/users
+Content-Type: application/json
+
+{
+  "email": "invalid@example.com"
+}
+
+###
+
+### 10. Test Error - Create User with Duplicate Email
+POST http://localhost:3001/users
+Content-Type: application/json
+
+{
+  "email": "john.doe@example.com",
+  "name": "Duplicate User",
+  "age": 40
+}
+
+###
