@@ -16,9 +16,9 @@ POST http://localhost:3001/users
 Content-Type: application/json
 
 {
-  "email": "john.doe@example.com",
-  "name": "John Doe",
-  "age": 30
+  "email": "john.doexxy@example.com",
+  "name": "Johnx Doe",
+  "age": 36
 }
 
 ###
@@ -36,12 +36,12 @@ Content-Type: application/json
 ###
 
 ### 5. Get User by ID (replace {id} with actual user ID)
-GET http://localhost:3001/users/1
+GET http://localhost:3001/users/10
 
 ###
 
 ### 6. Update User (replace {id} with actual user ID)
-PUT http://localhost:3001/users/1
+PUT http://localhost:3001/users/10
 Content-Type: application/json
 
 {
@@ -53,7 +53,7 @@ Content-Type: application/json
 ###
 
 ### 7. Delete User (replace {id} with actual user ID)
-DELETE http://localhost:3001/users/1
+DELETE http://localhost:3001/users/10
 
 ###
 

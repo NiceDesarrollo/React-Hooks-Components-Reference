@@ -16,7 +16,5 @@ RUN npx prisma generate
 
 EXPOSE 3001
 
-# Create a startup script that pushes schema and starts the server
-RUN echo '#!/bin/bash\nnpx prisma db push\nnpm start' > /app/start.sh && chmod +x /app/start.sh
-
-CMD ["/app/start.sh"]
+# Start the application
+CMD ["npm", "start"]
